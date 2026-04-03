@@ -1,0 +1,77 @@
+@import 'tailwindcss';
+
+@layer base{
+       body{
+              font-family:"Geist Mono",Inter;
+       }
+       
+       @font-face {
+              font-family: Inter;
+              src: url(../fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+       }
+       @font-face {
+              font-family: "Geist Mono";
+              src: url(../fonts/Geist_Mono/GeistMono-VariableFont_wght.ttf);
+       }
+       h1{
+              @apply text-[15vw] md:text-[19vw] uppercase text-white w-full font-mono text-left animate-fadeUp [animation-timeline:view()];
+       }
+       h2{
+              @apply text-[5vw] md:text-[6vw] uppercase text-white w-full font-mono text-left animate-fadeUp [animation-timeline:view()] ;
+       }
+}
+
+@layer utilities{
+       .row{
+              @apply flex w-full flex-wrap;
+       }
+}
+
+@layer components{
+       .list{
+              @apply flex flex-wrap  justify-start content-start items-start;
+       }
+       .item{
+              @apply w-full flex justify-start  text-[14px] font-light text-white;
+       }
+       .link{
+              @apply flex gap-1 shadow w-[100px] h-[30xp] items-center
+               text-[14px] justify-between shadow-2xs shadow-gray-400;
+       }
+       .circle{
+              @apply w-1 h-1 rounded-full bg-black;
+       }
+       .card{
+              @apply w-[400px] h-[500px] lg:w-[300px]  lg:h-[400px] xl:w-[400px] xl:h-[500px]    flex flex-wrap relative animate-fadeUp [animation-timeline:view()];
+       }
+}
+
+@theme{
+       --animate-scrollx:scrollx 10s linear infinite ;
+       --animate-scale:scale .4s linear forwards;
+       --animate-fadeUp:fadeUp both;
+	--color-orange:#ffb433;
+	--color-transparent1:#fff9;
+	--color-transparent2:#fff3;
+	--color-transparent3:#ffffff1a;
+	--color-transparent4:#ffffff0d;
+       @keyframes scrollx{
+              from{transform:translateX(0);}
+              to{transform:translateX(-100%);}
+       }
+       @keyframes scale {
+              to{transform:scale(1.1)}
+       }
+     
+    
+            @keyframes fadeUp {
+              from{
+                     opacity: 0;
+                     transform: translateY(10px) scale(0.5);
+              }
+              to{
+                   opacity: 1;
+                   transform: translateY(0) scale(1);  
+              }
+}
+}
