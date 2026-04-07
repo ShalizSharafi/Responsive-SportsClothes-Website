@@ -6,7 +6,7 @@ A clean, minimal, and responsive e-commerce website showcasing everyday essentia
 
 ## 🔗 Demo
 
-Check out the live demo here: [Wearvo Demo](YOUR_GITHUB_PAGES_LINK)
+Check out the live demo here: [Wearvo Demo](https://shalizsharafi.github.io/Responsive-SportsClothes-Website/)
 
 ---
 
